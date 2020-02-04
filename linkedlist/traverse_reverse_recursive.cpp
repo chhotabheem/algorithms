@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-struct List
+struct ListNode
 {
     int data;
-    List *next = nullptr;
+    ListNode *next = nullptr;
 };
 
-void visit_node(List *node)
+void visit_node(ListNode *node)
 {
     cout << node->data << endl;
 }
 
-void traverse_reverse_recursive(List *head)
+void traverse_reverse_recursive(ListNode *head)
 {
     if (!head)
     {

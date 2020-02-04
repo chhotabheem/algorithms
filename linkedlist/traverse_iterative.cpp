@@ -1,16 +1,16 @@
 #include <iostream>
-struct List
+struct ListNode
 {
     int data;
-    List *next = nullptr;
+    ListNode *next = nullptr;
 };
 
-void visit_node(List *node)
+void visit_node(ListNode *node)
 {
     std::cout << node->data << std::endl;
 }
 
-void traverse_iterative(List *head)
+void traverse_iterative(ListNode *head)
 {
     while (head)
     {
